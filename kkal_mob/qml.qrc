@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>Second_stage.qml</file>
+        <file>First_stage.qml</file>
+        <file>Hello_screen.qml</file>
+        <file>Third_stage.qml</file>
+        <file>Summary_screen.qml</file>
+    </qresource>
+</RCC>
