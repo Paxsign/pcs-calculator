@@ -8,7 +8,7 @@
 third_stage_product_model::third_stage_product_model(QObject *parent)
     : QAbstractTableModel(parent)
 {
-    QFile file("tablitsa_produktov_itog.csv");//"assets:/tablitsa_produktov_itog.csv"
+    QFile file("assets:/tablitsa_produktov_itog.csv");//"tablitsa_produktov_itog.csv"
     if ( !file.open(QFile::ReadOnly | QFile::Text) ) {
         qDebug() << "File not exists";
     } else {

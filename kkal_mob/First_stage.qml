@@ -186,7 +186,8 @@ Item {
                     verticalAlignment: Text.AlignVCenter
                 }
                 TapHandler{
-                    onTapped: _First_stage.buttonClicked();
+                onTapped: _First_stage.buttonClicked(age_input.text,height_input.text,weight_input.text,male.checked,female.checked);
+
                 }
                 MouseArea{
                     anchors.fill:parent
@@ -244,28 +245,7 @@ Item {
                 width: parent.width
                 height: (20*window.height)/100
                 anchors.bottom: parent.bottom
-                /*Rectangle{
-                    id:to_main_form
-                height: parent.height
-                width: parent.width/2
-                color: "#b8ffa6"
-                Text {
-                    text: "Назад"
-                    font.bold: true
-                    font.pointSize: 12
-                    font.family: "Verdana"
-                    verticalAlignment: Text.AlignVCenter
-                    anchors.fill: parent
-                    horizontalAlignment: Text.AlignHCenter
-                }
-                TapHandler{
-                    onTapped: stackview.push(hello_screen)
-                }
-                MouseArea{
-                    anchors.fill:parent
-                    onClicked: stackview.push(hello_screen)
-            }
-                }*/
+
                 Rectangle{
                 id:to_second_stage
                 height: parent.height

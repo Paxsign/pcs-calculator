@@ -51,7 +51,6 @@ HEADERS += \
 
 DISTFILES +=
 
-
 android
 {
 my_files.path = /assets

@@ -7,7 +7,7 @@
 Second_stage_activity_model::Second_stage_activity_model(QObject *parent)
     : QAbstractListModel(parent)
 {
-    QFile file("tablitsa.csv");   //   assets:/tablitsa.csv
+    QFile file("assets:/tablitsa.csv");   //   tablitsa.csv
     if ( !file.open(QFile::ReadOnly | QFile::Text) ) {
         qDebug() << "File not exists";
     } else {
